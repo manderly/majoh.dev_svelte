@@ -21,7 +21,9 @@
 
 <style>
   .project {
-    display: flex;
+    display: grid;
+    padding: 16px;
+    grid-template-columns: 1fr 3fr;
     gap:2px;
   }
   .project-preview {
@@ -44,5 +46,15 @@
   table tr {
     vertical-align: top;
   }
+
+  @media (max-width: 860px) {
+    .project-preview {
+      width: 100%;
+      align-content:center;
+    }
+    .project {
+      grid-template-columns: 1fr;
+    }
+}
 
 </style>
