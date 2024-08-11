@@ -22,9 +22,9 @@
 <style>
   .project {
     display: grid;
-    padding: 16px;
     grid-template-columns: 1fr 3fr;
     gap:2px;
+    padding-bottom:6px;
   }
   .project-preview {
     width: 300px;
@@ -54,6 +54,7 @@
     }
     .project {
       grid-template-columns: 1fr;
+      margin-right:16px;
     }
 }
 

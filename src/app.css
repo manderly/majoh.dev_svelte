@@ -50,4 +50,8 @@ ul li:not(:last-child) {
   body {
     width:90%;
   }
+
+  .site-navigation-link {
+    font-size: 1em;
+  }
 }
