@@ -2,19 +2,20 @@
   export let title;
 </script>
 
-<div class="resume-section">
+<div class="section">
   <h2>{title}</h2>
 </div>
 
 
 <style>
-  .resume-section {
+  .section {
     text-align: left;
     border-bottom:1px solid #bbb;
     padding-top:0px;
     margin-top:30px;
+    margin-bottom:20px;
   }
-  .resume-section h2 {
+  .section h2 {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight:bold;

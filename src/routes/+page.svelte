@@ -7,9 +7,10 @@
   import Education from '$lib/components/Education.svelte';
 	import Project from '$lib/components/Project.svelte';
   import SectionTitle from '$lib/components/SectionTitle.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Header title="Mandi Booley"/>
+<Header title="Mandi Burley"/>
 <p>Hello! I am a software engineer with a background in game design (9 years) and web development (5 years). The end user is at the center of everything I do. ♥️</p>
 <a href="#top"></a>
 
@@ -26,7 +27,7 @@
   accomplishments={[
     "Designed and implemented front-end features for industrial analytics app that scored highly in user surveys",
     "Modernized aspects of the front-end codebase",
-    "Mentored team intern (6-month internship)",
+    "Mentored team intern during 6-month internship",
     "Took ownership of i18n and worked with external vendor to refine process",
     "Lead Frontend Guild and gave talks on testing, interesting bugs, books, and more"
   ]}
@@ -54,9 +55,8 @@
   startDate="2013"
   endDate="2021"
   accomplishments={[
-    "Designed and built original 'link checker' web app using React, socket.io, node.js, and the Amazon Product Advertising API - Amazin' Affiliate Link Checker (GitHub)",
-    "Designed and built original 'course reviews' web app in Angular and node.js that scrapes data from a Google spreadsheet and displays it in a user-friendly responsive design website - OSU CS Course Explorer (GitHub)",
-    "Developed and maintained personal WordPress sites, including TowerSecrets.com (GitHub) and DIYCraftPhotography.com",
+    "Designed and built original 'link checker' web app using React, socket.io, node.js, and the Amazon Product Advertising API - Amazin' Affiliate Link Checker",
+    "Designed and built original 'course reviews' web app in Angular and node.js that scrapes data from a Google spreadsheet and displays it in a user-friendly responsive design website - OSU CS Course Explorer",
     "Customized Genesis child theme and WordPress loop to meet the needs of several different websites"
   ]}
 />
@@ -108,30 +108,33 @@
 <SectionTitle title={"Hobby projects"} />
 <Project 
   projectName={"OSU CS Course Explorer"} 
+  src={'/imgs/project_osucscourseexplorer.jpg'}
   githubLink={"https://github.com/manderly/osu-cs-class-explorer"}
   description={"My AngularJS-based app consumes Oregon State University online CS course survey data from a Google Spreadsheet and displays it in a responsive, navigable format."}
-  liveLink={"https://osu-cs-course-explorer.netlify.app/"}
+  liveLink={"https://osu-cs-course-explorer.com"}
+  callToAction={"See it live"}
 />
 
 <Project 
   projectName={"C2 Erg Bests"} 
+  src={'/imgs/project_c2_erg_best.png'}
   githubLink={"https://github.com/manderly/c2-erg-best"}
   description={"Hobby project I made in React to crunch my own Concept 2 rower and bike data and identify trends in my workouts."}
-  liveLink={"https://osu-cs-course-explorer.netlify.app/"}
+  liveLink={"https://c2-erg-best.netlify.app/"}
+  callToAction={"See it live"}
 />
 
 <Project 
   projectName={"Amazin' Affiliate Link Checker"} 
+  src={'/imgs/project_amazin.png'}
   githubLink={"https://github.com/manderly/amazin-link-checker"}
   description={"Identify broken Amazon Affiliate links in your blog articles using this single-page app built using React, Socket.io, and the Amazon Product Advertising API. Watch a demo video."}
-  liveLink={"https://osu-cs-course-explorer.netlify.app/"}
+  liveLink={"https://youtu.be/Y0l0wju3tZg"}
+  callToAction={"Demo video"}
 />
-<hr/>
 
 <SectionTitle title={"Education"} />
 <Education />
-
-<hr/>
 
 <SectionTitle title={"Shipped game titles"} />
 <ShippedTitles
@@ -150,4 +153,13 @@
   ]}
 />
 
-<a href="#top" class="site-navigation-link" >Return to top</a>
+<SectionTitle title={"Other interesting projects"} />
+<ul>
+  <li><a href="https://github.com/manderly/amazin-wp-product-box">Amazin WP Product Box</a> - a Wordpress plugin <a href="https://www.tilcode.com/building-a-wordpress-product-box-plugin-part-1-making-my-own-plugin-management-page/">I made</a> for my own sites</li>
+  <li><a href="https://github.com/manderly/grocery_go">Grocery Go</a> - Hobby project to try out Flutter and <a href="https://www.tilcode.com/building-a-flutter-app-part-1-installation-and-setup/">document my learnings</a></li>
+  <li><a href="https://www.tilcode.com/">TILcode.com</a> - my code blog (tutorials and stuff I got stuck on)</li>
+  <li><a href="https://www.instagram.com/manderlyb/">My digital paintings</a> - Instagram gallery of my artwork made in iPad/Procreate paintings, SFW</li>
+  <li><a href="https://towersecrets.com">Tower Secrets</a> - My Tower of Terror fan site</li>
+</ul>
+
+<Footer lastUpdate="August 2024"/>

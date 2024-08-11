@@ -12,7 +12,7 @@
 
     <tr>
       <td class="text-at-top"><b>Dev dev</b></td>
-      <td>UX, technical documentation, wordsmithing, writing little scripts and exporters for repetitive stuff, Photoshop mockups and prototypes, prioritization, scoping, cross-discipline collaboration, turning ambiguity into action</td>
+      <td>UX, i18n, technical documentation, wordsmithing, writing little scripts and exporters for repetitive stuff, Photoshop mockups and prototypes, prioritization, scoping, cross-discipline collaboration, turning ambiguity into action</td>
     </tr>
   </table>
   
