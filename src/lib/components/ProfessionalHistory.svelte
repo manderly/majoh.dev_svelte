@@ -1,14 +1,15 @@
 <script>
   export let position;
+  export let location;
   export let companyName;
   export let startDate;
   export let endDate;
   export let accomplishments;
 </script>
 
-<div>
-  <h1>{position} @ {companyName}</h1>
-  <i>{startDate} - {endDate}</i>
+<div class="position-container">
+  <div class="position-title"><h3>{position} @ {companyName}</h3> <i class="start-and-end-date">{startDate} - {endDate}</i></div>
+  <span>{location}</span>
   <ul>
     {#each accomplishments as accomplishment}
       <li>{accomplishment}</li>
@@ -17,15 +18,16 @@
 </div>
 
 <style>
-  header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+  .position-container {
+    margin-bottom: 30px;
   }
 
-  h1 {
-    color: #333;
-    font-size: 24px;
-    margin: 0;
+  .position-title {
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    margin-top:0;
+    margin-bottom:3px;
   }
+
 </style>

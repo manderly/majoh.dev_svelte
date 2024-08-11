@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #10172a;
+  padding-top:10px;
+  padding-bottom:40px;
+  margin: 0 auto;
+  width:80%;
+  line-height:1.4em;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+ul li:not(:last-child) { 
+  margin-bottom: 8px;  
+}
+
+.site-navigation-link {
+  color: #054fb9;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing:3px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width:90%;
+  }
+}

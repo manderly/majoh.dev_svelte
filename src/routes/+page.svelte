@@ -1,25 +1,26 @@
 <script>
+  import "../app.css";
   import Header from '../lib/components/Header.svelte';
   import Technologies from '../lib/components/Technologies.svelte'; 
   import ProfessionalHistory from '../lib/components/ProfessionalHistory.svelte';
   import ShippedTitles from '$lib/components/ShippedTitles.svelte';
   import Education from '$lib/components/Education.svelte';
+	import Project from '$lib/components/Project.svelte';
+  import SectionTitle from '$lib/components/SectionTitle.svelte';
 </script>
 
-<Header title="Mandi Booley" />
+<Header title="Mandi Booley"/>
 <p>Hello! I am a software engineer with a background in game design (9 years) and web development (5 years). The end user is at the center of everything I do. ♥️</p>
+<a href="#top"></a>
 
-<hr/>
-
-<h2>Experienced with</h2>
+<SectionTitle title={"Experienced with"} />
 <Technologies />
 
-<hr/>
-
-<h2>Professional History</h2>
+<SectionTitle title={"Professional History"} />
 <ProfessionalHistory 
   position={"Software Engineer"} 
   companyName={"Seeq"} 
+  location={"Remote"}
   startDate={"Jan. 2022"}
   endDate={"Present"}
   accomplishments={[
@@ -34,13 +35,14 @@
   <ProfessionalHistory 
   position={"Software Engineer"} 
   companyName={"Expedia"} 
+  location={"Bellevue, WA"}
   startDate={"Jan. 2015"}
   endDate={"Aug. 2017"}
   accomplishments={[
     "Lead an embedded apprenticeship project working with a pair of college freshmen to add new photo upload and management functionalities to Ember-based app",
     "Identified root causes of various date picker and timezone issues, implemented improvements",
-    "Contributed to the design and flow of new user onboarding experie",
-    "Debugged, improved, and added to the project's automated tests (Karma, Ruby/Cucumber)",
+    "Contributed to the design and flow of new user onboarding experience",
+    "Debugged, improved, and added to the project's automated tests",
     "Regular contributor to project-specific and onboarding documentation"
   ]}
   />
@@ -48,6 +50,7 @@
   <ProfessionalHistory 
   position="Independent Web Developer" 
   companyName="Self-Employed" 
+  location={"Remote"}
   startDate="2013"
   endDate="2021"
   accomplishments={[
@@ -61,6 +64,7 @@
 <ProfessionalHistory 
   position="Game Designer" 
   companyName="Disney Social" 
+  location={"Bellevue, WA"}
   startDate="February 2013"
   endDate="April 2014"
   accomplishments={[
@@ -74,6 +78,7 @@
 <ProfessionalHistory 
   position="Lead Designer" 
   companyName="Glu Mobile (formerly Griptonite Games)" 
+  location={"Kirkland, WA"}
   startDate="December 2008"
   endDate="November 2012"
   accomplishments={[
@@ -88,6 +93,7 @@
 <ProfessionalHistory 
   position="Lead Artist/Designer" 
   companyName="Webfoot Technologies, Inc." 
+  location={"Lemont, IL"}
   startDate="April 2006"
   endDate="December 2008"
   accomplishments={[
@@ -99,19 +105,35 @@
   ]}
 />
 
+<SectionTitle title={"Hobby projects"} />
+<Project 
+  projectName={"OSU CS Course Explorer"} 
+  githubLink={"https://github.com/manderly/osu-cs-class-explorer"}
+  description={"My AngularJS-based app consumes Oregon State University online CS course survey data from a Google Spreadsheet and displays it in a responsive, navigable format."}
+  liveLink={"https://osu-cs-course-explorer.netlify.app/"}
+/>
+
+<Project 
+  projectName={"C2 Erg Bests"} 
+  githubLink={"https://github.com/manderly/c2-erg-best"}
+  description={"Hobby project I made in React to crunch my own Concept 2 rower and bike data and identify trends in my workouts."}
+  liveLink={"https://osu-cs-course-explorer.netlify.app/"}
+/>
+
+<Project 
+  projectName={"Amazin' Affiliate Link Checker"} 
+  githubLink={"https://github.com/manderly/amazin-link-checker"}
+  description={"Identify broken Amazon Affiliate links in your blog articles using this single-page app built using React, Socket.io, and the Amazon Product Advertising API. Watch a demo video."}
+  liveLink={"https://osu-cs-course-explorer.netlify.app/"}
+/>
 <hr/>
 
-<h2>Projects</h2>
-Coming soon
-
-<hr/>
-
-<h2>Education</h2>
+<SectionTitle title={"Education"} />
 <Education />
 
 <hr/>
 
-<h2>Shipped Titles</h2>
+<SectionTitle title={"Shipped game titles"} />
 <ShippedTitles
   titles={[
     "Marvel Avengers Alliance Tactics (2014) - Facebook",
@@ -127,3 +149,5 @@ Coming soon
     "My Little Pony: The Runaway Rainbow (2006) - PC"
   ]}
 />
+
+<a href="#top" class="site-navigation-link" >Return to top</a>
