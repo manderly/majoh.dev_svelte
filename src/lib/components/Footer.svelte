@@ -7,7 +7,7 @@
   <a href="#top" class="site-navigation-link" >Return to top</a>
   <div>Site lovingly crafted in Svelte by M. Burley</div>
   <div class="light-text small-text">(Svelte is fun, you should try it!)</div>
-  <div>Last updated August 2024</div>
+  <div>Last updated {lastUpdate}</div>
 </div>
 
 <style>

@@ -11,7 +11,7 @@
 </script>
 
 <Header title="Mandi Burley"/>
-<p>Hello! I am a software engineer with a background in game design (9 years) and web development (5 years). The end user is at the center of everything I do. ♥️</p>
+<p>Hello! I am a software engineer with a background in game design (9 years) and web development (6 years). The end user is at the center of everything I do. ♥️</p>
 <a href="#top"></a>
 
 <SectionTitle title={"Experienced with"} />
@@ -162,4 +162,4 @@
   <li><a href="https://towersecrets.com">Tower Secrets</a> - My Tower of Terror fan site</li>
 </ul>
 
-<Footer lastUpdate="August 2024"/>
+<Footer lastUpdate="January 2026"/>
